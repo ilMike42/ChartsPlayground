@@ -6,8 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1DE49FF02D81F79600DFAF73 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1DE49FEF2D81F79600DFAF73 /* SnapKit */; };
+		1DE49FF32D82DA4600DFAF73 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1DE49FF22D82DA4600DFAF73 /* SwiftUICharts */; };
+		1DE49FF62D82DA6600DFAF73 /* AAInfographics in Frameworks */ = {isa = PBXBuildFile; productRef = 1DE49FF52D82DA6600DFAF73 /* AAInfographics */; };
+		1DE49FF82D82DAF200DFAF73 /* SwiftUIChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE49FF72D82DAF200DFAF73 /* SwiftUIChartsView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1D5FA0712D7F4E270029260D /* ChartsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DE49FF72D82DAF200DFAF73 /* SwiftUIChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +31,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE49FF62D82DA6600DFAF73 /* AAInfographics in Frameworks */,
+				1DE49FF02D81F79600DFAF73 /* SnapKit in Frameworks */,
+				1DE49FF32D82DA4600DFAF73 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +43,7 @@
 		1D5FA0682D7F4E270029260D = {
 			isa = PBXGroup;
 			children = (
+				1DE49FF72D82DAF200DFAF73 /* SwiftUIChartsView.swift */,
 				1D5FA0732D7F4E270029260D /* ChartsPlayground */,
 				1D5FA0722D7F4E270029260D /* Products */,
 			);
@@ -65,6 +77,9 @@
 			);
 			name = ChartsPlayground;
 			packageProductDependencies = (
+				1DE49FEF2D81F79600DFAF73 /* SnapKit */,
+				1DE49FF22D82DA4600DFAF73 /* SwiftUICharts */,
+				1DE49FF52D82DA6600DFAF73 /* AAInfographics */,
 			);
 			productName = ChartsPlayground;
 			productReference = 1D5FA0712D7F4E270029260D /* ChartsPlayground.app */;
@@ -94,6 +109,11 @@
 			);
 			mainGroup = 1D5FA0682D7F4E270029260D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1DE49FEE2D81F79600DFAF73 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1DE49FF12D82DA4600DFAF73 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				1DE49FF42D82DA6600DFAF73 /* XCRemoteSwiftPackageReference "AAChartKit-Swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1D5FA0722D7F4E270029260D /* Products */;
 			projectDirPath = "";
@@ -119,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE49FF82D82DAF200DFAF73 /* SwiftUIChartsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +356,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DE49FEE2D81F79600DFAF73 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		1DE49FF12D82DA4600DFAF73 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.3;
+			};
+		};
+		1DE49FF42D82DA6600DFAF73 /* XCRemoteSwiftPackageReference "AAChartKit-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AAChartModel/AAChartKit-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DE49FEF2D81F79600DFAF73 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DE49FEE2D81F79600DFAF73 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1DE49FF22D82DA4600DFAF73 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DE49FF12D82DA4600DFAF73 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+		1DE49FF52D82DA6600DFAF73 /* AAInfographics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DE49FF42D82DA6600DFAF73 /* XCRemoteSwiftPackageReference "AAChartKit-Swift" */;
+			productName = AAInfographics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D5FA0692D7F4E270029260D /* Project object */;
 }

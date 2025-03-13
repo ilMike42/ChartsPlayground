@@ -1,0 +1,33 @@
+{
+  "originHash" : "1b6c908d7c38ae4b8b915f5efaae1ed3d3c7b5c87ca8aa4c9ae2bf133e1903db",
+  "pins" : [
+    {
+      "identity" : "aachartkit-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AAChartModel/AAChartKit-Swift.git",
+      "state" : {
+        "revision" : "dff3df79a04c86c60dc76a4e734a9e2a4a9ce23a",
+        "version" : "9.1.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swiftuicharts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/willdale/SwiftUICharts",
+      "state" : {
+        "revision" : "01b54e54dd88f5c1fa55077a260255c6036e3dab",
+        "version" : "2.10.3"
+      }
+    }
+  ],
+  "version" : 3
+}
